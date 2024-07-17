@@ -1,0 +1,14 @@
+.footer-wrapper{
+    background-color: $black-50;
+    padding: 16px 0;
+    .logo{
+        font-size: 36px;
+        font-family: $montserrat-font;
+        font-weight: 800;
+        color: $global-white;
+    }
+    p{
+        color: $global-white;
+        font-size: 13px;
+    }
+}

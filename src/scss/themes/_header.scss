@@ -1,0 +1,160 @@
+.header {
+    z-index: 999;
+    padding: 32px 0;
+    transition: 0.3s all ease;
+
+    .logo {
+        font-size: 36px;
+        font-family: $montserrat-font;
+        font-weight: 800;
+        color: $global-white;
+    }
+
+    .navigation {
+        gap: 36px;
+
+        li {
+            a {
+                color: $global-white;
+                font-family: $poppins-regular;
+                font-size: 15px;
+
+                span {
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $global-white;
+                        -webkit-transform: scaleX(.3);
+                        transform: scaleX(.3);
+                        opacity: 0;
+                        transition: all .3s;
+                    }
+                }
+
+                &:hover {
+                    span::before {
+                        opacity: 1;
+                        background-color: $global-white;
+                        -webkit-transform: scaleX(1);
+                        transform: scaleX(1);
+                        transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+                    }
+                }
+
+                &.active {
+                    color: $global-white;
+
+                    span {
+                        &::before {
+                            opacity: 1;
+                            background-color: $global-white;
+                            -webkit-transform: scaleX(1);
+                            transform: scaleX(1);
+                            transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .secondary-btn {
+        transition: 0.3s all ease;
+
+        &:hover {
+            background-color: $global-white;
+            color: $black-75;
+            transform: translateY(-5px);
+        }
+    }
+
+    .toggler-btn {
+        .bar-icon {
+            width: 28px;
+
+            span {
+                height: 2px;
+                background-color: $global-white;
+            }
+        }
+
+    }
+    .offcanvas{
+        .hidden-nav-logo{
+            .logo{
+                color: $black-75;
+            }
+        }
+        .offcanvas-contents{
+            ul{
+                li{
+                    a{
+                        color: $black-75;
+                        font-family: $poppins-regular;
+                        font-size: 18px;
+                        border-radius: 5px;
+                        &:hover{
+                            background-color: #f2f2f2;
+                        }
+                    }
+                }
+            }
+        }
+      }
+
+    &.fixed {
+        background-color: $global-white;
+        padding: 8px 0;
+        box-shadow: $first-box-shadow;
+
+        .logo {
+            color: $black-75;
+        }
+
+        .navigation {
+            li {
+                a {
+                    color: $black-75;
+
+                    span {
+                        &::before {
+                            background-color: $black-75;
+                        }
+
+                        &::after {
+                            background-color: $black-75;
+                        }
+                    }
+                }
+            }
+        }
+
+        .secondary-btn {
+            color: $black-75;
+            border-color: $black-75;
+
+            &:hover {
+                background-color: $black-75;
+                color: $global-white;
+            }
+        }
+
+        .toggler-btn {
+            .bar-icon {
+                span {
+                    height: 2px;
+                    background-color: $black-75;
+                }
+            }
+
+        }
+    }
+}
