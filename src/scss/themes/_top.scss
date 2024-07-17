@@ -66,6 +66,7 @@
 
 .about {
     .about-content-wrapper {
+        gap: 26px;
         .about-text {
             max-width: 90%;
             width: 100%;
@@ -416,8 +417,13 @@
         .about-img{
             margin-left: 0;
         }
-        .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 .loader-wrapper{
+        .about-content-wrapper{
+        .about-content .about-link-content .skill-content .skill-1 .loader-wrapper{
             max-width: 100%;
+        }
+        .about-text{
+            max-width: 100%;
+        }
         }
     }
 .portfolio{
