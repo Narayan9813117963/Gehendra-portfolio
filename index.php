@@ -84,7 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="primary-btn d-block cv-btn">Download CV</a>
+                    <a href="images/Narayan-Chaudhary-cv (updated).pdf" target="_blank" class="primary-btn d-block cv-btn">Download CV</a>
                 </div>
             </div>
             <div class="col-lg-6">
