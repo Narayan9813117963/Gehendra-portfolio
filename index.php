@@ -8,13 +8,13 @@
                 <span class="typed-text"></span><span class="cursor">&nbsp;</span>
             </p>
             <div class="hero-social d-flex justify-content-center justify-content-lg-start">
-                <a href="#" class="position-relative"><span class="position-absolute"><i
+                <a href="https://www.facebook.com/profile.php?id=100013751371780" class="position-relative"><span class="position-absolute"><i
                             class="bi bi-facebook"></i></span></a>
-                <a href="#" class="position-relative"><span class="position-absolute"><i
+                <a href="https://www.behance.net/search/projects/web%20developer%20portfolio" class="position-relative"><span class="position-absolute"><i
                             class="bi bi-behance"></i></span></a>
-                <a href="#" class="position-relative"><span class="position-absolute"><i
+                <a href="https://wa.me/+9779813117963" target="_blank" class="position-relative"><span class="position-absolute"><i
                             class="bi bi-whatsapp"></i></span></a>
-                <a href="#" class="position-relative"><span class="position-absolute"><i
+                <a href="https://www.linkedin.com/in/narayan-chaudhary-2b9865258/" class="position-relative"><span class="position-absolute"><i
                             class="bi bi-linkedin"></i></span></a>
             </div>
         </div>
@@ -43,48 +43,82 @@
                         </div>
                         <div class="about-link-content d-flex justify-content-center justify-content-lg-start">
                             <div class="content skill-content w-100 active">
-                                <div class="skill-1 web-design">
-                                    <div class="skill-label d-flex gap-3">
-                                        <p>Web Design (Figma/AdobeXD)</p>
-                                        <p class="hidden-num d-sm-none">[85%]</p>
-                                    </div>
-                                    <div class="loader-wrapper position-relative">
-                                        <span class="position-absolute d-none  d-sm-block">85%</span>
-                                        <div class="loader-overlay position-absolute left-0 top-0"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-1 front-end">
-                                    <div class="skill-label d-flex gap-3">
-                                        <p>Front-end (HTML/ CSS/SCSS/Bootstrap)</p>
-                                        <p class="hidden-num d-sm-none">[80%]</p>
-                                    </div>
-                                    <div class="loader-wrapper position-relative">
-                                        <span class="position-absolute d-none  d-sm-block">80%</span>
-                                        <div class="loader-overlay position-absolute left-0 top-0"></div>
+                                <div class="skill-1">
+                                    <div class="progress-bar-skill" data-percentage="80%">
+                                        <div class="progress-title-holder d-flex gap-3">
+                                            <p>Web Design (Figma/AdobeXD)</p>
+                                            <p class="hidden-num d-sm-none">[80%]</p>
+                                            <span class="progress-number-wrapper d-none d-sm-block">
+                                                <span class="progress-number-mark">
+                                                    <span class="percent"></span>
+                                                    <span class="down-arrow"></span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="progress-content-outter">
+                                            <div class="progress-content"></div>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="skill-1 back-end">
-                                    <div class="skill-label d-flex gap-3">
-
-                                        <p>Back-end (Mongo DB, Python)</p>
-                                        <p class="hidden-num d-sm-none">[70%]</p>
+                                <div class="skill-1 py-4">
+                                    <div class="progress-bar-skill" data-percentage="85%">
+                                        <div class="progress-title-holder d-flex gap-3">
+                                            <p>Front-end (HTML/ CSS/SCSS/Bootstrap)</p>
+                                            <p class="hidden-num d-sm-none">[85%]</p>
+                                            <span class="progress-number-wrapper d-none d-sm-block">
+                                                <span class="progress-number-mark">
+                                                    <span class="percent"></span>
+                                                    <span class="down-arrow"></span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="progress-content-outter">
+                                            <div class="progress-content"></div>
+                                        </div>
                                     </div>
-                                    <div class="loader-wrapper position-relative">
-                                        <span class="position-absolute d-none  d-sm-block">70%</span>
-                                        <div class="loader-overlay position-absolute left-0 top-0"></div>
+                                </div>
+                                <div class="skill-1">
+                                    <div class="progress-bar-skill" data-percentage="70%">
+                                        <div class="progress-title-holder d-flex gap-3">
+                                            <p>Back-end (Mongo DB, Python)</p>
+                                            <p class="hidden-num d-sm-none">[70%]</p>
+                                            <span class="progress-number-wrapper d-none d-sm-block">
+                                                <span class="progress-number-mark">
+                                                    <span class="percent"></span>
+                                                    <span class="down-arrow"></span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="progress-content-outter">
+                                            <div class="progress-content"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="content education-content">
-                                Education content goes here
+                                <ul class="p-0 m-0 d-flex flex-column">
+                                    <li><strong>High School(+2)</strong> at Milestone HSS, Balkumari in 2015</li>
+                                    <li><strong>Bachelor in Science(Bsc)</strong> at Trichandra Multiple Campus,
+                                        Ghantaghar in 2017</li>
+                                    <li><strong>Masters in Information technology(MIT)</strong> at Himalayan College of
+                                        Management, Kamalpokhari in 2024</li>
+                                </ul>
                             </div>
                             <div class="content experience-content">
-                                Experience content goes here
+                                <ul class="p-0 m-0 d-flex flex-column">
+                                    <li><strong>Enumerator</strong> at Central Beureau of Statistics, Thapathali from
+                                        2017 - 2018</li>
+                                    <li><strong>Data Entry Operator</strong> at Central Beureau of Statistics,
+                                        Thapathali from 2018 - 2019</li>
+                                    <li><strong>Data Entry Operator</strong> at Education Review Office, Sanothimi from
+                                        2022-2024</li>
+                                        <li><strong>Web Design Intern</strong> at Miracle Interface, Kupandole present</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <a href="images/Narayan-Chaudhary-cv (updated).pdf" target="_blank" class="primary-btn d-block cv-btn">Download CV</a>
+                    <a href="images/Narayan-Chaudhary-cv (updated).pdf" target="_blank"
+                        class="primary-btn d-block cv-btn">Download CV</a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -100,7 +134,7 @@
         <h2 class="text-center">Services</h2>
         <div class="row row-gap-4">
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <div class="service-card h-100 text-center text-sm-start">
                         <i class="bi bi-laptop"></i>
                         <h3 class="my-3">Web Design</h3>
@@ -109,7 +143,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <div class="service-card h-100 text-center text-sm-start">
                         <i class="bi bi-diamond"></i>
                         <h3 class="my-3">Creative Design</h3>
@@ -118,7 +152,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <div class="service-card h-100 text-center text-sm-start">
                         <i class="bi bi-display"></i>
                         <h3 class="my-3">Responsive Design</h3>
@@ -128,7 +162,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <div class="service-card h-100 text-center text-sm-start">
                         <i class="bi bi-terminal"></i>
                         <h3 class="my-3">Web Development</h3>
@@ -138,7 +172,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <div class="service-card h-100 text-center text-sm-start">
                         <i class="bi bi-speedometer2"></i>
                         <h3 class="my-3">SEO Friendly</h3>
@@ -148,7 +182,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <div class="service-card h-100 text-center text-sm-start">
                         <i class="bi bi-lightning-fill"></i>
                         <h3 class="my-3">Performance Optimization</h3>
@@ -163,7 +197,7 @@
     <div class="custom-container">
         <h2 class="text-center">My Latest Work</h2>
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-sm-6 col-lg-4">
                 <a href="https://basnyatbrew.onrender.com/" class="text-center">
                     <div
                         class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
@@ -178,7 +212,7 @@
                     <h3>Basnyat Brew Coffee Shop</h3>
                 </a>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-sm-6 col-lg-4">
                 <a href="https://basnyatbrew.onrender.com/" class="text-center">
                     <div
                         class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
@@ -193,7 +227,7 @@
                     <h3>Basnyat Brew Coffee Shop</h3>
                 </a>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-sm-6 col-lg-4">
                 <a href="https://basnyatbrew.onrender.com/" class="text-center">
                     <div
                         class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">

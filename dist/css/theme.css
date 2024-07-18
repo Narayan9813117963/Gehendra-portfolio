@@ -59,7 +59,7 @@ img {
   display: block;
   max-width: fit-content;
   font-family: "poppins-regular";
-  border-radius: 10px;
+  border-radius: 6px;
   transition: 0.3s all ease;
   border: 1px solid transparent; }
   .primary-btn:hover {
@@ -74,7 +74,7 @@ img {
   font-size: 15px;
   color: #fff;
   font-family: "poppins-regular";
-  border-radius: 10px; }
+  border-radius: 6px; }
 
 @media only screen and (max-width: 1200px) {
   .custom-container {
@@ -130,7 +130,7 @@ img {
             font-size: 22px; }
 
 .about .about-content-wrapper {
-  gap: 26px; }
+  gap: 10px; }
   .about .about-content-wrapper .about-text {
     max-width: 90%;
     width: 100%; }
@@ -192,42 +192,57 @@ img {
       margin-top: 13px; }
       .about .about-content-wrapper .about-content .about-link-content .content {
         display: none; }
-      .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 p {
-        font-family: "poppins-medium";
-        font-size: 14px;
-        margin-bottom: 6px; }
-      .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 .loader-wrapper {
-        max-width: 460px;
-        height: 12px;
-        width: 100%;
-        border: 1px solid #353535;
-        border-radius: 30px; }
-        .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 .loader-wrapper span {
-          top: -38px;
-          padding: 5px;
-          background: #353535;
-          color: #fff;
-          border-radius: 5px;
-          font-size: 13px;
-          font-family: "poppins-regular"; }
-        .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 .loader-wrapper .loader-overlay {
-          background-color: #3D3D3D;
-          border-radius: 30px;
-          height: 100%; }
-      .about .about-content-wrapper .about-content .about-link-content .skill-content .web-design span {
-        right: 65px; }
-      .about .about-content-wrapper .about-content .about-link-content .skill-content .web-design .loader-overlay {
-        width: 85%; }
-      .about .about-content-wrapper .about-content .about-link-content .skill-content .front-end {
-        margin: 32px 0; }
-        .about .about-content-wrapper .about-content .about-link-content .skill-content .front-end span {
-          right: 71px; }
-        .about .about-content-wrapper .about-content .about-link-content .skill-content .front-end .loader-overlay {
-          width: 80%; }
-      .about .about-content-wrapper .about-content .about-link-content .skill-content .back-end span {
-        right: 121px; }
-      .about .about-content-wrapper .about-content .about-link-content .skill-content .back-end .loader-overlay {
-        width: 70%; }
+      .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 {
+        max-width: 480px; }
+        .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 .progress-bar-skill p {
+          font-family: "poppins-medium";
+          font-size: 14px;
+          margin-bottom: 6px; }
+        .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 .progress-bar-skill .progress-title-holder {
+          position: relative; }
+          .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 .progress-bar-skill .progress-title-holder .progress-number-wrapper .progress-number-mark {
+            margin-bottom: 4px;
+            border-radius: 3px;
+            background-color: #3D3D3D;
+            padding: 0 8px;
+            position: absolute;
+            bottom: 0;
+            font-family: "poppins-regular";
+            font-size: 11px;
+            line-height: 24px;
+            color: #fff;
+            width: 36px;
+            -moz-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%); }
+            .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 .progress-bar-skill .progress-title-holder .progress-number-wrapper .progress-number-mark .down-arrow {
+              border-left: 3px solid transparent;
+              border-right: 3px solid transparent;
+              border-top: 3px solid #3D3D3D;
+              position: absolute;
+              left: 50%;
+              top: 100%;
+              -moz-transform: translateX(-50%);
+              -o-transform: translateX(-50%);
+              transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+              -webkit-transform: translateX(-50%); }
+        .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 .progress-bar-skill .progress-content-outter {
+          height: 12px;
+          border: 1px solid #3D3D3D;
+          border-radius: 30px; }
+          .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 .progress-bar-skill .progress-content-outter .progress-content {
+            height: 10px;
+            background-color: #3D3D3D;
+            width: 0%;
+            border-radius: 30px; }
+      .about .about-content-wrapper .about-content .about-link-content .education-content ul, .about .about-content-wrapper .about-content .about-link-content .experience-content ul {
+        gap: 16px; }
+        .about .about-content-wrapper .about-content .about-link-content .education-content ul li, .about .about-content-wrapper .about-content .about-link-content .experience-content ul li {
+          font-family: "poppins-regular";
+          font-size: 15px; }
       .about .about-content-wrapper .about-content .about-link-content .active {
         display: block; }
   .about .about-content-wrapper .cv-btn {
@@ -262,7 +277,7 @@ img {
 
 .portfolio a .portfolio-card {
   padding: 30px;
-  background-color: #f3f3f3;
+  background-color: #f7f7f7;
   border-radius: 12px; }
   .portfolio a .portfolio-card .card-overlay {
     width: 90%;
@@ -311,7 +326,7 @@ img {
 
 .contact form input, .contact form textarea {
   height: 50px;
-  background-color: #f1f1f1;
+  background-color: #f7f7f7;
   border: none;
   padding: 0 16px;
   font-family: "poppins-regular";
@@ -357,10 +372,8 @@ img {
     row-gap: 40px; }
   .about .about-img {
     margin-left: 0; }
-  .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 .loader-wrapper {
-    max-width: 100%; }
-  .about .about-content-wrapper .about-text {
-    max-width: 100%; }
+  .about .about-content-wrapper .about-text, .about .about-content-wrapper .skill-1 {
+    max-width: 100% !important; }
   .portfolio .row {
     row-gap: 40px; }
   .contact .submit-btn {

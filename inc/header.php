@@ -18,7 +18,7 @@
                     <a href="#" class="logo">GR</a>
                 </div>
                 <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center">
-                    <ul class="p-0 m-0 d-flex align-items-center navigation">
+                    <ul class="p-0 m-0 d-flex align-items-center navigation" id="main-nav">
                         <li>
                             <a href="#home" class="active"><span>Home</span></a>
                         </li>
@@ -37,7 +37,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-3 d-none d-lg-flex justify-content-end align-items-center">
-                    <a href="#" class="secondary-btn">Hire me</a>
+                    <a href="#contact" class="secondary-btn hire-btn">Hire me</a>
                 </div>
                 <div class=" col-6 toggler-btn d-flex d-lg-none align-items-center justify-content-end">
                     <div class=" d-flex align-items-center justify-content-end w-100">
@@ -62,10 +62,10 @@
                             <div class="offcanvas-contents">
                                 <ul class="d-flex flex-column p-0">
                                     <li class="text-center"><a class="py-3 d-block  w-100" href="#">Home</a></li>
-                                    <li class="text-center"><a class="py-3 d-block  w-100" href="#">About</a></li>
-                                    <li class="text-center"><a class="py-3 d-block  w-100" href="#">Services</a></li>
-                                    <li class="text-center"><a class="py-3 d-block  w-100" href="#">Portfolio</a></li>
-                                    <li class="text-center"><a class="py-3 d-block  w-100" href="#">Contact</a></li>
+                                    <li class="text-center"><a class="py-3 d-block  w-100" href="#about">About</a></li>
+                                    <li class="text-center"><a class="py-3 d-block  w-100" href="#services">Services</a></li>
+                                    <li class="text-center"><a class="py-3 d-block  w-100" href="#portfolio">Portfolio</a></li>
+                                    <li class="text-center"><a class="py-3 d-block  w-100" href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                         </div>

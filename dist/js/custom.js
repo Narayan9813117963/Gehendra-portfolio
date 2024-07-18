@@ -70,18 +70,67 @@ document.addEventListener('DOMContentLoaded', function() {
       link.addEventListener('click', function() {
           // Remove active class from all links
           links.forEach(link => link.classList.remove('active'));
-          // Add active class to the clicked link
           this.classList.add('active');
 
-          // Hide all content divs
           contents.forEach(content => content.classList.remove('active'));
 
-          // Show the content div that corresponds to the clicked link
           const target = this.getAttribute('data-target');
           document.querySelector(`.${target}`).classList.add('active');
       });
   });
 });
 
+function updateActiveLink(sectionId) {
+  document.querySelectorAll('#main-nav a').forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === sectionId);
+  });
+}
+
+document.querySelectorAll('#main-nav a, .hire-btn').forEach(link => {
+  link.addEventListener('click', function(event) {
+      event.preventDefault();
+      const sectionId = this.getAttribute('href');
+      updateActiveLink(sectionId);
+      document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+window.addEventListener('scroll', function() {
+  let currentSection = '#home';  // Default to 'home' section
+  document.querySelectorAll('section').forEach(section => {
+      if (window.scrollY >= section.offsetTop - 50) {
+          currentSection = `#${section.getAttribute('id')}`;
+      }
+  });
+  updateActiveLink(currentSection);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  let currentSection = '#home';  // Default to 'home' section
+  document.querySelectorAll('section').forEach(section => {
+      if (window.scrollY >= section.offsetTop - 50) {
+          currentSection = `#${section.getAttribute('id')}`;
+      }
+  });
+  updateActiveLink(currentSection);
+});
 
 
+jQuery(document).ready(function(){
+  
+  jQuery('.progress-bar-skill').each(function() {
+    jQuery(this).find('.progress-content').animate({
+      width:jQuery(this).attr('data-percentage')
+    },2000);
+    
+    jQuery(this).find('.progress-number-mark').animate(
+      {left:jQuery(this).attr('data-percentage')},
+      {
+       duration: 2000,
+       step: function(now, fx) {
+         var data = Math.round(now);
+         jQuery(this).find('.percent').html(data + '%');
+       }
+    });  
+  });
+});
