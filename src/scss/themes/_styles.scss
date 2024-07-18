@@ -88,6 +88,18 @@ img{
     }
 }
 @media only screen and (max-width: 576px) {
+    h1{
+        font-size: 56px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    p{
+        font-size: 14px;
+    }
     .custom-container{
         padding: 0 20px;
     }

@@ -83,6 +83,14 @@ img {
     padding: 0 40px; } }
 
 @media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 56px; }
+  h2 {
+    font-size: 36px; }
+  h3 {
+    font-size: 16px; }
+  p {
+    font-size: 14px; }
   .custom-container {
     padding: 0 20px; }
   .custom-container-sm {
@@ -106,7 +114,7 @@ img {
       .hero-section .hero-text p span.cursor {
         display: inline-block;
         font-family: "poppins-semiBold";
-        background-color: #ccc;
+        background-color: #fff;
         margin-left: 0.1rem;
         width: 3px;
         animation: blink 1s infinite; }
@@ -148,7 +156,7 @@ img {
       .about .about-content-wrapper .about-content .about-links ul li {
         font-family: "poppins-medium";
         font-size: 16px;
-        color: #a4a4a4;
+        color: #a5a5a5;
         cursor: pointer;
         padding: 16px;
         transition: 0.3s all ease; }
@@ -313,58 +321,55 @@ img {
 .portfolio a:hover .service-thumb {
   scale: 1.04; }
 
-.contact h2 {
-  margin-bottom: 64px; }
-
-.contact form .row {
-  row-gap: 36px; }
-
-.contact form label {
-  font-size: 16px;
-  font-family: "poppins-regular";
-  margin-bottom: 12px; }
-
-.contact form input, .contact form textarea {
-  height: 50px;
-  background-color: #f7f7f7;
-  border: none;
-  padding: 0 16px;
-  font-family: "poppins-regular";
-  border-radius: 5px; }
-  .contact form input::placeholder, .contact form textarea::placeholder {
-    font-size: 14px;
-    color: #a5a5a5; }
-  .contact form input:focus, .contact form textarea:focus {
-    outline: none; }
-
-.contact form textarea {
-  height: 176px;
-  padding: 10px 16px;
-  resize: none; }
-
-.contact .submit-btn {
-  margin-top: 32px; }
-
-.contact .contact-info-wrapper {
-  margin-top: 76px; }
-  .contact .contact-info-wrapper .info-card a {
-    gap: 16px; }
-    .contact .contact-info-wrapper .info-card a .info-icon {
-      height: 46px;
-      width: 46px;
-      border-radius: 50%;
-      border: 1px solid #353535;
-      transition: 0.3s all ease; }
-      .contact .contact-info-wrapper .info-card a .info-icon i {
-        color: #353535;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%); }
-    .contact .contact-info-wrapper .info-card a:hover .info-icon {
-      background-color: #3D3D3D; }
-      .contact .contact-info-wrapper .info-card a:hover .info-icon i {
-        color: #fff; }
+.contact {
+  background-color: #F8F9FC; }
+  .contact h2 {
+    margin-bottom: 64px; }
+  .contact form .row {
+    row-gap: 36px; }
+  .contact form label {
+    font-size: 16px;
+    font-family: "poppins-regular";
+    margin-bottom: 12px; }
+  .contact form input, .contact form textarea {
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    padding: 0 16px;
+    font-family: "poppins-regular";
+    border-radius: 5px;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.034), 0 12px 64px 0 rgba(0, 0, 0, 0.034); }
+    .contact form input::placeholder, .contact form textarea::placeholder {
+      font-size: 14px;
+      color: #a5a5a5; }
+    .contact form input:focus, .contact form textarea:focus {
+      outline: none; }
+  .contact form textarea {
+    height: 176px;
+    padding: 16px 20px;
+    resize: none; }
+  .contact .submit-btn {
+    margin-top: 32px; }
+  .contact .contact-info-wrapper {
+    margin-top: 76px; }
+    .contact .contact-info-wrapper .info-card a {
+      gap: 16px; }
+      .contact .contact-info-wrapper .info-card a .info-icon {
+        height: 46px;
+        width: 46px;
+        border-radius: 50%;
+        border: 1px solid #353535;
+        transition: 0.3s all ease; }
+        .contact .contact-info-wrapper .info-card a .info-icon i {
+          color: #353535;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%); }
+      .contact .contact-info-wrapper .info-card a:hover .info-icon {
+        background-color: #3D3D3D; }
+        .contact .contact-info-wrapper .info-card a:hover .info-icon i {
+          color: #fff; }
 
 @media only screen and (max-width: 992px) {
   .about .row {
