@@ -344,7 +344,6 @@
     }
 }
 .contact{
-    background-color: $section-bg;
     h2{
         margin-bottom: 64px;
     }
@@ -359,12 +358,11 @@
         }
         input,textarea{
             height: 50px;
-            background-color: $global-white;
+            background-color: $section-bg;
             border: none;
             padding: 0 16px;
             font-family: $poppins-regular;
             border-radius: 5px;
-            box-shadow:  0 4px 24px 0 rgba(0, 0, 0, 0.034),0 12px 64px 0 rgba(0, 0, 0, 0.034);
             &::placeholder{
                 font-size: 14px;
                 color: $inactive;
