@@ -15,7 +15,7 @@
         <div class="custom-container">
             <div class="row">
                 <div class="col-6 col-lg-3">
-                    <a href="#" class="logo">GR</a>
+                    <a href="../index.php" class="logo">GR</a>
                 </div>
                 <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center">
                     <ul class="p-0 m-0 d-flex align-items-center navigation" id="main-nav">
@@ -53,7 +53,7 @@
                         aria-labelledby="offCanvasLabel">
                         <div class="offcanvas-header">
                             <div class="hidden-nav-logo">
-                            <a href="#" class="logo">GR</a>
+                            <a href="../index.php" class="logo">GR</a>
                             </div>
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
