@@ -242,7 +242,7 @@ img {
           border: 1px solid #3D3D3D;
           border-radius: 30px; }
           .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 .progress-bar-skill .progress-content-outter .progress-content {
-            height: 10px;
+            height: 11px;
             background-color: #3D3D3D;
             width: 0%;
             border-radius: 30px; }
@@ -456,7 +456,7 @@ img {
   .header.fixed {
     background-color: #fff;
     padding: 8px 0;
-    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.1), 0 12px 64px 0 rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.025), 0 12px 64px 0 rgba(0, 0, 0, 0.025); }
     .header.fixed .logo {
       color: #3D3D3D; }
     .header.fixed .navigation li a {

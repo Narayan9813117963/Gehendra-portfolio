@@ -20,7 +20,7 @@
         </div>
     </div>
 </main>
-<section class="about section-pad" id="about-section">
+<section class="about section-pad" id="about">
     <div class="custom-container">
         <div class="row">
             <div class="col-lg-6">

@@ -9,6 +9,18 @@ window.addEventListener("scroll", function () {
     }
   });
   
+  document.addEventListener('DOMContentLoaded', function() {
+    const offcanvasLinks = document.querySelectorAll('.offcanvas-link');
+    const offcanvas = document.getElementById('offCanvas');
+    const bootstrapOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvas);
+
+    offcanvasLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            bootstrapOffcanvas.hide();
+        });
+    });
+});
+
 
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
