@@ -2,6 +2,31 @@
   margin: 0;
   padding: 0; }
 
+.main-container {
+  display: none; }
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.ripple {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 5px solid #3D3D3D;
+  transform: translate(50%);
+  animation: 0.8s ripple ease-out infinite; }
+
+@keyframes ripple {
+  from {
+    transform: scale(0);
+    opacity: 1; }
+  to {
+    transform: scale(1);
+    opacity: 0; } }
+
 h1 {
   font-family: "montserrat";
   font-weight: 800;
@@ -97,12 +122,12 @@ img {
     padding: 0 20px; } }
 
 .hero-section {
-  background-image: url(../../images/hero-bg.png);
+  background-image: url(../../images/hero-bg.webp);
   background-size: cover;
   height: 100vh; }
   .hero-section .hero-overlay {
     background-color: #000;
-    opacity: .65; }
+    opacity: 0.65; }
   .hero-section .hero-text {
     margin-top: 65px; }
     .hero-section .hero-text p {
@@ -123,19 +148,16 @@ img {
     .hero-section .hero-text .hero-social {
       gap: 12px; }
       .hero-section .hero-text .hero-social a {
-        padding: 24px;
+        width: 46px;
+        height: 46px;
         border-radius: 50%;
         background-color: #00000066;
         transition: 0.3s all ease; }
         .hero-section .hero-text .hero-social a:hover {
           background-color: #00000091; }
-        .hero-section .hero-text .hero-social a span {
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%); }
-          .hero-section .hero-text .hero-social a span i {
-            color: #fff;
-            font-size: 22px; }
+        .hero-section .hero-text .hero-social a i {
+          color: #fff;
+          font-size: 18px; }
 
 .about .about-content-wrapper {
   gap: 10px; }
@@ -176,7 +198,7 @@ img {
             -webkit-transform: scaleX(0.3);
             transform: scaleX(0.3);
             opacity: 0;
-            transition: all .3s; }
+            transition: all 0.3s; }
         .about .about-content-wrapper .about-content .about-links ul li:hover {
           color: #3D3D3D; }
           .about .about-content-wrapper .about-content .about-links ul li:hover span::before {
@@ -246,9 +268,11 @@ img {
             background-color: #3D3D3D;
             width: 0%;
             border-radius: 30px; }
-      .about .about-content-wrapper .about-content .about-link-content .education-content ul, .about .about-content-wrapper .about-content .about-link-content .experience-content ul {
+      .about .about-content-wrapper .about-content .about-link-content .education-content ul,
+      .about .about-content-wrapper .about-content .about-link-content .experience-content ul {
         gap: 16px; }
-        .about .about-content-wrapper .about-content .about-link-content .education-content ul li, .about .about-content-wrapper .about-content .about-link-content .experience-content ul li {
+        .about .about-content-wrapper .about-content .about-link-content .education-content ul li,
+        .about .about-content-wrapper .about-content .about-link-content .experience-content ul li {
           font-family: "poppins-regular";
           font-size: 15px; }
       .about .about-content-wrapper .about-content .about-link-content .active {
@@ -332,18 +356,24 @@ img {
   font-family: "poppins-regular";
   margin-bottom: 12px; }
 
-.contact form input, .contact form textarea {
+.contact form input,
+.contact form textarea {
   height: 50px;
   background-color: #F8F9FC;
   border: none;
   padding: 0 16px;
   font-family: "poppins-regular";
-  border-radius: 5px; }
-  .contact form input::placeholder, .contact form textarea::placeholder {
+  border-radius: 5px;
+  transition: 0.3s all ease;
+  border: 1px solid transparent; }
+  .contact form input::placeholder,
+  .contact form textarea::placeholder {
     font-size: 14px;
     color: #a5a5a5; }
-  .contact form input:focus, .contact form textarea:focus {
-    outline: none; }
+  .contact form input:focus,
+  .contact form textarea:focus {
+    outline: none;
+    border: 1px solid #dedede; }
 
 .contact form textarea {
   height: 176px;
@@ -380,7 +410,8 @@ img {
     row-gap: 40px; }
   .about .about-img {
     margin-left: 0; }
-  .about .about-content-wrapper .about-text, .about .about-content-wrapper .skill-1 {
+  .about .about-content-wrapper .about-text,
+  .about .about-content-wrapper .skill-1 {
     max-width: 100% !important; }
   .portfolio .row {
     row-gap: 40px; }

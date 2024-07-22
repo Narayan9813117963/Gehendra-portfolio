@@ -8,14 +8,14 @@
                 <span class="typed-text"></span><span class="cursor">&nbsp;</span>
             </p>
             <div class="hero-social d-flex justify-content-center justify-content-lg-start">
-                <a href="https://www.facebook.com/profile.php?id=100013751371780" class="position-relative"><span class="position-absolute"><i
-                            class="bi bi-facebook"></i></span></a>
-                <a href="https://www.behance.net/search/projects/web%20developer%20portfolio" class="position-relative"><span class="position-absolute"><i
-                            class="bi bi-behance"></i></span></a>
-                <a href="https://wa.me/+9779813117963" target="_blank" class="position-relative"><span class="position-absolute"><i
-                            class="bi bi-whatsapp"></i></span></a>
-                <a href="https://www.linkedin.com/in/narayan-chaudhary-2b9865258/" class="position-relative"><span class="position-absolute"><i
-                            class="bi bi-linkedin"></i></span></a>
+                <a href="https://www.facebook.com/profile.php?id=100013751371780"
+                    class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.behance.net/search/projects/web%20developer%20portfolio"
+                    class="d-flex align-items-center justify-content-center"><i class="bi bi-behance"></i></a>
+                <a href="https://wa.me/+9779813117963" target="_blank"
+                    class="d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/narayan-chaudhary-2b9865258/"
+                    class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
             </div>
         </div>
     </div>
@@ -112,7 +112,7 @@
                                         Thapathali from 2018 - 2019</li>
                                     <li><strong>Data Entry Operator</strong> at Education Review Office, Sanothimi from
                                         2022-2024</li>
-                                        <li><strong>Web Design Intern</strong> at Miracle Interface, Kupandole present</li>
+                                    <li><strong>Web Design Intern</strong> at Miracle Interface, Kupandole present</li>
                                 </ul>
                             </div>
                         </div>

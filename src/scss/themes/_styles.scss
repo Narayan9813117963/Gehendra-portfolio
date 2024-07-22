@@ -2,6 +2,38 @@
     margin: 0;
     padding: 0;
 }
+
+.main-container{
+    display: none;
+}
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ripple {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%; 
+    border: 5px solid $black-75;
+    transform: translate(50%);
+    animation: 0.8s ripple ease-out infinite;
+}
+
+@keyframes ripple {
+    from {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
 h1{
     font-family: $montserrat-font;
     font-weight: 800;

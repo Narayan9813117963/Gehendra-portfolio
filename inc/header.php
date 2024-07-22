@@ -4,21 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gehendra's portfolio showcasing creative design and front-end development skills. Explore projects, resume, and contact information.">
     <title>Portfolio</title>
     <link rel="icon" href="../images/site-icon/favicon.ico">
-    <link rel="stylesheet" href="dist/css/vendor.css">
-    <link rel="stylesheet" href="dist/css/theme.css">
+    <link rel="stylesheet" href="dist/css/vendor.min.css">
+    <link rel="stylesheet" href="dist/css/theme.min.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+<div class="loader">
+    <div class="ripple"></div>
+</div>
+    <div class="main-container">
     <nav class="header position-fixed w-100" id="navbar">
         <div class="custom-container">
             <div class="row">
                 <div class="col-6 col-lg-3">
                     <a href="../index.php" class="logo">GR</a>
                 </div>
-                <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center">
-                    <ul class="p-0 m-0 d-flex align-items-center navigation" id="main-nav">
+                <div class="col-lg-6 d-none d-lg-flex">
+                    <ul class="p-0 m-0 mx-auto d-flex align-items-center navigation" id="main-nav">
                         <li>
                             <a href="#home" class="active"><span>Home</span></a>
                         </li>
@@ -36,11 +41,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 d-none d-lg-flex justify-content-end align-items-center">
-                    <a href="#contact" class="secondary-btn hire-btn">Hire me</a>
+                <div class="col-lg-3 d-none d-lg-flex">
+                    <div class="hire-btn-wrapper d-flex align-items-center justify-content-end w-100">
+                        <a href="#contact" class="secondary-btn hire-btn d-block">Hire me</a>
+                    </div>
                 </div>
-                <div class=" col-6 toggler-btn d-flex d-lg-none align-items-center justify-content-end">
-                    <div class=" d-flex align-items-center justify-content-end w-100">
+                <div class=" col-6 d-flex d-lg-none">
+                    <div class=" d-flex align-items-center justify-content-end w-100 toggler-btn">
                         <div class="bar-icon d-flex flex-column gap-2" data-bs-toggle="offcanvas" href="#offCanvas"
                             role="button" aria-controls="offCanvas">
                             <span class="w-100"></span>
