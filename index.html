@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="dist/css/theme.min.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="50">
+<body>
     <div class="loader">
         <div class="ripple"></div>
     </div>
-    <div class="main-container">
+    <div class="main-container" data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="0" data-bs-smooth-scroll="true">
         <nav class="header position-fixed w-100" id="navbar">
             <div class="custom-container">
                 <div class="row">
@@ -26,22 +26,22 @@
                     <div class="col-lg-6 d-none d-lg-flex">
                         <ul class="p-0 m-0 mx-auto d-flex align-items-center navigation" id="main-nav">
                             <li>
-                                <a href="#home" class="nav-link active"><span>Home</span></a>
+                                <a href="#home" target="_blank" class="nav-link active"><span>Home</span></a>
                             </li>
                             <li>
-                                <a href="#about" class="nav-link"><span>About</span></a>
+                                <a href="#about" target="_blank" class="nav-link"><span>About</span></a>
                             </li>
                             <li>
-                                <a href="#services" class="nav-link"><span>Services</span></a>
+                                <a href="#services" target="_blank" class="nav-link"><span>Services</span></a>
                             </li>
                             <li>
-                                <a href="#portfolio" class="nav-link"><span>Portfolio</span></a>
+                                <a href="#portfolio" target="_blank" class="nav-link"><span>Portfolio</span></a>
                             </li>
                             <li>
-                                <a href="#testimonials" class="nav-link"><span>Clients</span></a>
+                                <a href="#testimonials" target="_blank" class="nav-link"><span>Clients</span></a>
                             </li>
                             <li>
-                                <a href="#contact" class="nav-link"><span>Contact</span></a>
+                                <a href="#contact" target="_blank" class="nav-link"><span>Contact</span></a>
                             </li>
                         </ul>
                     </div>
@@ -73,7 +73,7 @@
                                 <div class="offcanvas-contents">
                                     <ul class="d-flex flex-column p-0">
                                         <li class="text-center"><a class="py-3 d-block w-100 offcanvas-link"
-                                                href="#">Home</a></li>
+                                                href="#home">Home</a></li>
                                         <li class="text-center"><a class="py-3 d-block w-100 offcanvas-link"
                                                 href="#about">About</a></li>
                                         <li class="text-center"><a class="py-3 d-block w-100 offcanvas-link"

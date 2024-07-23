@@ -1,5 +1,18 @@
+function handleLoadingAnimation() {
+  const loader = document.querySelector('.loader');
+  const mainContainer = document.querySelector('.main-container');
+  
+  setTimeout(() => {
+    loader.classList.add('hidden');
+  }, 1600);
+  setTimeout(() => {
+    mainContainer.classList.add('loaded');
+  }, 1800);
+}
 
-
+document.addEventListener("DOMContentLoaded", function() {
+  handleLoadingAnimation();
+});
 
 window.addEventListener("scroll", function () {
   var header = document.querySelector(".header"); 
@@ -24,53 +37,57 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+$(".navigation a, .hire-btn, .offcanvas-contents a") .on("click" , function(event){
+  event.preventDefault();
+  var target = $($(this).attr("href"));
+  if (target.length) {
+    var targetPos = target.offset().top - 40;
+    $("html , body").scrollTop(targetPos);
+}
+});
+
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = ["Designing web", "Front-End Development", "Back-End Development"];
 const typingDelay = 100;
-const erasingDelay = 50;
-const newTextDelay = 500; 
+const erasingDelay = 100;
+const newTextDelay = 700;
+
 let textArrayIndex = 0;
-let charIndex = textArray[0].length;
+let charIndex = 0;
 
-typedTextSpan.textContent = textArray[0];
-
-cursorSpan.style.display = "none";
-
-function type() {
-  cursorSpan.style.display = "inline-block";
-  if (charIndex < textArray[textArrayIndex].length) {
-      cursorSpan.classList.add("typing");
-      typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-      charIndex++;
-      setTimeout(type, typingDelay);
-  } else {
-      cursorSpan.classList.remove("typing");
-      setTimeout(() => {
-          cursorSpan.style.display = "none";
-          setTimeout(erase, newTextDelay);
-      }, 500); 
-  }
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function erase() {
-  cursorSpan.style.display = "inline-block"; 
-  if (charIndex > 0) {
-      cursorSpan.classList.add("typing");
-      typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-      charIndex--;
-      setTimeout(erase, erasingDelay);
-  } else {
-      cursorSpan.classList.remove("typing");
-      textArrayIndex = (textArrayIndex + 1) % textArray.length;
-      charIndex = 0;
-      setTimeout(type, typingDelay);
-  }
+async function type() {
+    cursorSpan.style.opacity = "1";
+    while (charIndex < textArray[textArrayIndex].length) {
+        typedTextSpan.textContent += textArray[textArrayIndex][charIndex];
+        charIndex++;
+        await sleep(typingDelay);
+    }
+    cursorSpan.style.opacity = "0";
+    await sleep(newTextDelay);
+    erase();
+}
+
+async function erase() {
+    cursorSpan.style.opacity = "1";
+    while (charIndex > 0) {
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+        charIndex--;
+        await sleep(erasingDelay);
+    }
+    cursorSpan.style.opacity = "0";
+    textArrayIndex = (textArrayIndex + 1) % textArray.length;
+    await sleep(newTextDelay);
+    type();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => setTimeout(erase, newTextDelay), newTextDelay);
+    type();
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -89,45 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
-
-function updateActiveLink(sectionId) {
-  document.querySelectorAll("#main-nav a").forEach((link) => {
-      link.classList.toggle("active", link.getAttribute("href") === sectionId);
-  });
-}
-
-document.querySelectorAll("#main-nav a, .hire-btn").forEach((link) => {
-  link.addEventListener("click", function (event) {
-      event.preventDefault();
-      const sectionId = this.getAttribute("href");
-      document.querySelector(sectionId).scrollIntoView({ behavior: "smooth" });
-      updateActiveLink(sectionId);
-  });
-});
-
-function updateActiveSection() {
-  const sections = document.querySelectorAll("section");
-  let currentSection = "#home";
-
-  sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 50;
-      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + section.offsetHeight) {
-          currentSection = `#${section.id}`;
-      }
-  });
-
-  updateActiveLink(currentSection);
-}
-
-// Event listeners
-document.addEventListener("DOMContentLoaded", () => {
-  updateActiveSection();
-});
-
-window.addEventListener("scroll", () => {
-  updateActiveSection();
-});
-
 
 jQuery(document).ready(function () {
   jQuery(".progress-bar-skill").each(function () {
@@ -159,11 +137,10 @@ jQuery(document).ready(function () {
 
 
 // Function to initialize Slick Slider
-function initializeSlickSlider() {
   $('.testi-slider').slick({
       dots: false,
       infinite: true,
-      speed: 300,
+      speed: 800,
       slidesToShow: 2,
       slidesToScroll: 1,
       prevArrow: '.prev-btn',
@@ -175,24 +152,8 @@ function initializeSlickSlider() {
                   slidesToShow: 1,
                   slidesToScroll: 1,
                   infinite: true,
-                  dots: false // Fixed typo 'flase' to 'false'
+                  dots: false 
               }
           },
       ]
   });
-}
-
-// Handle the loading animation and initialize the slider
-function handleLoadingAnimation() {
-  $(".loader").fadeOut(2000, function() {
-      $(".main-container").fadeIn(1000, function() {
-          initializeSlickSlider();
-      });
-  });
-}
-
-// Call the function to handle loading animation
-$(document).ready(function() {
-  handleLoadingAnimation();
-});
-

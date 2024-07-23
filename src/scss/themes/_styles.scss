@@ -4,13 +4,22 @@
 }
 
 .main-container{
-    display: none;
+    opacity: 0;
+    transition: 0.3s opacity ease-in;
+    &.loaded{
+        opacity: 1;
+    }
 }
 .loader {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: 0.3s opacity ease-in;
+    &.hidden{
+        opacity: 0;
+    }
 }
 
 .ripple {
