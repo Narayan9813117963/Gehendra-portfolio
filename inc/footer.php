@@ -6,7 +6,7 @@
             </div>
             <div class="col-lg-9">
                 <div
-                    class="copyright-text  d-flex align-items-center justify-content-center justify-content-lg-end h-100">
+                    class="copyright-text text-center d-flex align-items-center justify-content-center justify-content-lg-end h-100">
                     <p>GR © 2024. All Right Reserved, Designed By Narayan.</p>
                 </div>
             </div>
