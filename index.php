@@ -27,10 +27,11 @@
                 <div class="about-content-wrapper d-flex flex-column align-items-center align-items-lg-start">
                     <div class="about-text text-center text-lg-start">
                         <h2>ABOUT ME</h2>
-                        <span>UI/UX DESIGNER & WEB DEVELOPER</span>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour, or randomised words
-                            which dont look even slightly believable.
+                        <span class="subtitle">UI/UX DESIGNER & WEB DEVELOPER</span>
+                        <p>I’m Gehendra, a passionate Front-End Developer and Creative Designer with a knack for turning
+                            ideas into visually compelling and functional web experiences. I strive to blend creativity
+                            with technology to deliver impactful solutions. Explore my portfolio to see how I can bring
+                            your vision to life!
                         </p>
                     </div>
                     <div class="about-content w-100">
@@ -131,7 +132,10 @@
 </section>
 <section class="services section-pad" id="services">
     <div class="custom-container">
-        <h2 class="text-center">Services</h2>
+        <div class="head-text text-center">
+            <h2>Services</h2>
+            <span class="subtitle">What I can do for you</span>
+        </div>
         <div class="row row-gap-4">
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                 <a href="javascript:void(0)">
@@ -195,59 +199,137 @@
 </section>
 <section class="portfolio section-pad" id="portfolio">
     <div class="custom-container">
-        <h2 class="text-center">My Latest Work</h2>
+        <div class="head-text text-center">
+            <h2>My Latest Work</h2>
+            <span class="subtitle">Collection of My Projects
+            </span>
+        </div>
         <div class="row">
             <div class="col-12 col-sm-6 col-lg-4">
-                <a href="https://basnyatbrew.onrender.com/" class="text-center">
-                    <div
-                        class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
-                        <figure class="service-thumb">
-                            <img src="images/coffee-shop-1.png" alt="">
-                        </figure>
-                        <div class="card-overlay position-absolute"></div>
-                        <div class="card-btn position-absolute">
-                            <p class="primary-btn">Demo</p>
-                        </div>
+                <div
+                    class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
+                    <figure class="service-thumb">
+                        <img src="images/coffee-shop-1.png" alt="project-thumb">
+                    </figure>
+                    <div class="card-overlay position-absolute"></div>
+                    <div class="card-btn position-absolute">
+                        <a href="https://basnyatbrew.onrender.com/" class="primary-btn">Demo</a>
                     </div>
-                    <h3>Basnyat Brew Coffee Shop</h3>
-                </a>
+                </div>
+                <h3 class="text-center">Basnyat Brew Coffee Shop</h3>
             </div>
             <div class="col-12 col-sm-6 col-lg-4">
-                <a href="https://basnyatbrew.onrender.com/" class="text-center">
-                    <div
-                        class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
-                        <figure class="service-thumb">
-                            <img src="images/coffee-shop-1.png" alt="">
-                        </figure>
-                        <div class="card-overlay position-absolute"></div>
-                        <div class="card-btn position-absolute">
-                            <p class="primary-btn">Demo</p>
-                        </div>
+                <div
+                    class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
+                    <figure class="service-thumb">
+                        <img src="images/coffee-shop-1.png" alt="project-thumb">
+                    </figure>
+                    <div class="card-overlay position-absolute"></div>
+                    <div class="card-btn position-absolute">
+                        <a href="https://basnyatbrew.onrender.com/" class="primary-btn">Demo</a>
                     </div>
-                    <h3>Basnyat Brew Coffee Shop</h3>
-                </a>
+                </div>
+                <h3 class="text-center">Basnyat Brew Coffee Shop</h3>
             </div>
             <div class="col-12 col-sm-6 col-lg-4">
-                <a href="https://basnyatbrew.onrender.com/" class="text-center">
-                    <div
-                        class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
-                        <figure class="service-thumb">
-                            <img src="images/coffee-shop-1.png" alt="">
-                        </figure>
-                        <div class="card-overlay position-absolute"></div>
-                        <div class="card-btn position-absolute">
-                            <p class="primary-btn">Demo</p>
-                        </div>
+                <div
+                    class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
+                    <figure class="service-thumb">
+                        <img src="images/coffee-shop-1.png" alt="project-thumb">
+                    </figure>
+                    <div class="card-overlay position-absolute"></div>
+                    <div class="card-btn position-absolute">
+                        <a href="https://basnyatbrew.onrender.com/" class="primary-btn">Demo</a>
                     </div>
-                    <h3>Basnyat Brew Coffee Shop</h3>
-                </a>
+                </div>
+                <h3 class="text-center">Basnyat Brew Coffee Shop</h3>
             </div>
+        </div>
+    </div>
+</section>
+<section class="testimonials section-pad" id="testimonials">
+    <div class="custom-container-sm">
+        <div class="head-text text-center position-relative">
+            <div class="slider-btn d-flex position-absolute bottom-0 end-0">
+                <span class="prev-btn"><i class="bi bi-chevron-left"></i></span>
+                <span class="next-btn"><i class="bi bi-chevron-right"></i></span>
+            </div>
+            <h2 class="text-center">Testimonials</h2>
+            <span class="subtitle">What Our Clients Are Saying</span>
+        </div>
+        <div class="testi-slider d-flex">
+            <div class="slider-card d-flex flex-column">
+                <div class="user-img-wrapper d-flex align-items-center gap-3">
+                    <figure class="user-img">
+                        <img src="images/user.webp" alt="user-img">
+                    </figure>
+                    <div class="user-name d-flex flex-column gap-1">
+                        <h3>Harry Philip</h3>
+                        <span class="user-detail">Co-Founder IT Company</span>
+                    </div>
+                </div>
+                <p class="comment">I throw myself down among the tall grass by the stream as I lie close to the earth.I
+                    throw myself down among the tall grass by the stream as I lie close to the earth.among the tall
+                    grass by the stream as I lie close to the earth. among the tall grass by the stream as I lie close
+                    to the earth.</p>
+                <div class="star-wrapper d-flex gap-2">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </div>
+            <div class="slider-card d-flex flex-column">
+                <div class="user-img-wrapper d-flex align-items-center gap-3">
+                    <figure class="user-img">
+                        <img src="images/user.webp" alt="user-img">
+                    </figure>
+                    <div class="user-name d-flex flex-column gap-1">
+                        <h3>Harry Philip</h3>
+                        <span class="user-detail">Co-Founder IT Company</span>
+                    </div>
+                </div>
+                <p class="comment">I throw myself down among the tall grass by the stream as I lie close to the earth.
+                </p>
+                <div class="star-wrapper d-flex gap-2">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </div>
+            <div class="slider-card d-flex flex-column">
+                <div class="user-img-wrapper d-flex align-items-center gap-3">
+                    <figure class="user-img">
+                        <img src="images/user.webp" alt="user-img">
+                    </figure>
+                    <div class="user-name d-flex flex-column gap-1">
+                        <h3>Harry Philip</h3>
+                        <span class="user-detail">Co-Founder IT Company</span>
+                    </div>
+                </div>
+                <p class="comment">I throw myself down among the tall grass by the stream as I lie close to the earth.
+                </p>
+                <div class="star-wrapper d-flex gap-2">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 <section class="contact section-pad" id="contact">
     <div class="custom-container-sm">
-        <h2 class="text-center">Hire me</h2>
+        <div class="head-text text-center">
+            <h2>Hire me</h2>
+            <span class="subtitle">Get Connected Now</span>
+        </div>
         <form action="submit">
             <div class="row">
                 <div class="col-md-6">

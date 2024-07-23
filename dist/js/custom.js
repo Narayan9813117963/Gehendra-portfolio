@@ -1,12 +1,8 @@
 
-  // Fade in content after spinner animation
-  $(".loader").fadeOut(2000, function() {
-    $(".main-container").fadeIn(1000);
-  });
 
 
 window.addEventListener("scroll", function () {
-  var header = document.querySelector(".header"); // Use querySelector instead of getElementById
+  var header = document.querySelector(".header"); 
   if (window.scrollY > 50) {
       header.classList.add("fixed");
       header.style.opacity = "1";
@@ -34,18 +30,16 @@ const cursorSpan = document.querySelector(".cursor");
 const textArray = ["Designing web", "Front-End Development", "Back-End Development"];
 const typingDelay = 100;
 const erasingDelay = 50;
-const newTextDelay = 500; // Delay between current and next text
+const newTextDelay = 500; 
 let textArrayIndex = 0;
-let charIndex = textArray[0].length; // Start at the end of the first text
+let charIndex = textArray[0].length;
 
-// Initially display the first text
 typedTextSpan.textContent = textArray[0];
 
-// Initially hide the cursor
 cursorSpan.style.display = "none";
 
 function type() {
-  cursorSpan.style.display = "inline-block"; // Ensure cursor is visible when typing starts
+  cursorSpan.style.display = "inline-block";
   if (charIndex < textArray[textArrayIndex].length) {
       cursorSpan.classList.add("typing");
       typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
@@ -54,14 +48,14 @@ function type() {
   } else {
       cursorSpan.classList.remove("typing");
       setTimeout(() => {
-          cursorSpan.style.display = "none"; // Hide cursor when typing completes
+          cursorSpan.style.display = "none";
           setTimeout(erase, newTextDelay);
-      }, 500); // Add a short delay before hiding the cursor
+      }, 500); 
   }
 }
 
 function erase() {
-  cursorSpan.style.display = "inline-block"; // Ensure cursor is visible when erasing starts
+  cursorSpan.style.display = "inline-block"; 
   if (charIndex > 0) {
       cursorSpan.classList.add("typing");
       typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
@@ -76,7 +70,6 @@ function erase() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Start erasing after the initial text is shown
   setTimeout(() => setTimeout(erase, newTextDelay), newTextDelay);
 });
 
@@ -86,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   links.forEach((link) => {
       link.addEventListener("click", function () {
-          // Remove active class from all links
           links.forEach((link) => link.classList.remove("active"));
           this.classList.add("active");
 
@@ -108,30 +100,34 @@ document.querySelectorAll("#main-nav a, .hire-btn").forEach((link) => {
   link.addEventListener("click", function (event) {
       event.preventDefault();
       const sectionId = this.getAttribute("href");
-      updateActiveLink(sectionId);
       document.querySelector(sectionId).scrollIntoView({ behavior: "smooth" });
+      updateActiveLink(sectionId);
   });
 });
 
-window.addEventListener("scroll", function () {
-  let currentSection = "#home"; // Default to 'home' section
-  document.querySelectorAll("section").forEach((section) => {
-      if (window.scrollY >= section.offsetTop - 50) {
-          currentSection = `#${section.getAttribute("id")}`;
+function updateActiveSection() {
+  const sections = document.querySelectorAll("section");
+  let currentSection = "#home";
+
+  sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 50;
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + section.offsetHeight) {
+          currentSection = `#${section.id}`;
       }
   });
+
   updateActiveLink(currentSection);
+}
+
+// Event listeners
+document.addEventListener("DOMContentLoaded", () => {
+  updateActiveSection();
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  let currentSection = "#home"; // Default to 'home' section
-  document.querySelectorAll("section").forEach((section) => {
-      if (window.scrollY >= section.offsetTop - 50) {
-          currentSection = `#${section.getAttribute("id")}`;
-      }
-  });
-  updateActiveLink(currentSection);
+window.addEventListener("scroll", () => {
+  updateActiveSection();
 });
+
 
 jQuery(document).ready(function () {
   jQuery(".progress-bar-skill").each(function () {
@@ -160,3 +156,43 @@ jQuery(document).ready(function () {
           );
   });
 });
+
+
+// Function to initialize Slick Slider
+function initializeSlickSlider() {
+  $('.testi-slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      prevArrow: '.prev-btn',
+      nextArrow: '.next-btn',
+      responsive: [
+          {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false // Fixed typo 'flase' to 'false'
+              }
+          },
+      ]
+  });
+}
+
+// Handle the loading animation and initialize the slider
+function handleLoadingAnimation() {
+  $(".loader").fadeOut(2000, function() {
+      $(".main-container").fadeIn(1000, function() {
+          initializeSlickSlider();
+      });
+  });
+}
+
+// Call the function to handle loading animation
+$(document).ready(function() {
+  handleLoadingAnimation();
+});
+

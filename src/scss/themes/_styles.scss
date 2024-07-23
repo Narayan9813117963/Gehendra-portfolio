@@ -68,6 +68,9 @@ a{
 li{
     list-style: none;
 }
+figure{
+    margin: 0;
+}
 img{
     width: 100%;
 }
@@ -110,6 +113,15 @@ img{
     color: $global-white;
     font-family: $poppins-regular;
     border-radius: 6px;
+}
+.head-text {
+    margin-bottom: 64px;
+  }
+.subtitle{
+    font-family: "poppins-regular";
+    font-size: 14px;
+    color: #7A7A7A;
+    letter-spacing: 2px;
 }
 @media only screen and (max-width: 1200px) {
     .custom-container{

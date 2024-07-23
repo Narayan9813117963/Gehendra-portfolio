@@ -60,6 +60,9 @@ a {
 li {
   list-style: none; }
 
+figure {
+  margin: 0; }
+
 img {
   width: 100%; }
 
@@ -100,6 +103,15 @@ img {
   color: #fff;
   font-family: "poppins-regular";
   border-radius: 6px; }
+
+.head-text {
+  margin-bottom: 64px; }
+
+.subtitle {
+  font-family: "poppins-regular";
+  font-size: 14px;
+  color: #7A7A7A;
+  letter-spacing: 2px; }
 
 @media only screen and (max-width: 1200px) {
   .custom-container {
@@ -171,6 +183,9 @@ img {
       letter-spacing: 2px; }
     .about .about-content-wrapper .about-text p {
       margin-top: 23px; }
+  .about .about-content-wrapper .about-img-wrapper .about-img {
+    top: -40px;
+    left: -40px; }
   .about .about-content-wrapper .about-content {
     margin-top: 10px; }
     .about .about-content-wrapper .about-content .about-links ul {
@@ -287,15 +302,13 @@ img {
 
 .services {
   background-color: #F8F9FC; }
-  .services h2 {
-    margin-bottom: 64px; }
   .services a {
     color: #3D3D3D; }
     .services a .service-card {
       background-color: #fff;
       box-shadow: 2px 2px 10.4px rgba(0, 0, 0, 0.062);
       border-radius: 10px;
-      padding: 36px;
+      padding: 25px 36px;
       transition: 0.3s all ease;
       min-height: 258px; }
       .services a .service-card i {
@@ -304,49 +317,92 @@ img {
       .services a .service-card:hover {
         transform: translateY(-5px); }
 
-.portfolio h2 {
-  margin-bottom: 64px; }
-
-.portfolio a .portfolio-card {
-  padding: 30px;
+.portfolio .portfolio-card {
+  padding: 40px 30px;
   background-color: #f7f7f7;
-  border-radius: 12px; }
-  .portfolio a .portfolio-card .card-overlay {
+  border-radius: 12px;
+  cursor: pointer; }
+  .portfolio .portfolio-card .card-overlay {
     width: 90%;
     height: 90%;
     top: 50%;
     left: 50%;
-    transform: translate(-45%, -50%);
+    transform: translate(-50%, -45%);
     border-radius: 12px;
     background-color: #ffffffed;
     opacity: 0;
     transition: 0.3s all ease; }
-  .portfolio a .portfolio-card .card-btn {
+  .portfolio .portfolio-card .card-btn {
     top: 50%;
     left: 50%;
     transform: translate(-45%, -50%);
     opacity: 0;
     transition: 0.3s all ease;
     z-index: 22; }
-  .portfolio a .portfolio-card .service-thumb {
-    max-width: 242px;
+  .portfolio .portfolio-card .service-thumb {
+    max-width: 200px;
     transition: 0.3s all ease; }
+  .portfolio .portfolio-card:hover .card-overlay,
+  .portfolio .portfolio-card:hover .card-btn {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .portfolio .portfolio-card:hover .service-thumb {
+    scale: 1.04; }
 
-.portfolio a h3 {
+.portfolio h3 {
   margin-top: 20px;
   font-size: 16px;
   font-weight: 600; }
 
-.portfolio a:hover .card-overlay,
-.portfolio a:hover .card-btn {
-  opacity: 1;
-  transform: translate(-50%, -50%); }
-
-.portfolio a:hover .service-thumb {
-  scale: 1.04; }
-
-.contact h2 {
-  margin-bottom: 64px; }
+.testimonials {
+  background-color: #F8F9FC; }
+  .testimonials .head-text {
+    padding-bottom: 86px;
+    margin-bottom: 20px; }
+    .testimonials .head-text .slider-btn {
+      gap: 10px; }
+      .testimonials .head-text .slider-btn .prev-btn,
+      .testimonials .head-text .slider-btn .next-btn {
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.3s all ease; }
+        .testimonials .head-text .slider-btn .prev-btn i,
+        .testimonials .head-text .slider-btn .next-btn i {
+          font-size: 22px; }
+        .testimonials .head-text .slider-btn .prev-btn:hover,
+        .testimonials .head-text .slider-btn .next-btn:hover {
+          scale: 1.2; }
+  .testimonials .testi-slider {
+    margin: 0 -20px; }
+    .testimonials .testi-slider .slick-list {
+      padding-bottom: 20px; }
+    .testimonials .testi-slider .slider-card {
+      background-color: #fff;
+      box-shadow: 2px 2px 10.4px rgba(0, 0, 0, 0.062);
+      border-radius: 10px;
+      padding: 36px;
+      transition: 0.3s all ease;
+      min-height: 258px;
+      margin-right: 20px;
+      margin-left: 20px;
+      gap: 16px; }
+      .testimonials .testi-slider .slider-card .user-img-wrapper .user-img {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .testimonials .testi-slider .slider-card .user-img-wrapper .user-img img {
+          object-fit: cover; }
+      .testimonials .testi-slider .slider-card .user-img-wrapper .user-name .user-detail {
+        font-family: "poppins-regular";
+        color: #989898;
+        font-size: 14px; }
+      .testimonials .testi-slider .slider-card .comment {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis; }
 
 .contact form .row {
   row-gap: 36px; }
@@ -422,6 +478,11 @@ img {
     row-gap: 32px; }
   .footer-wrapper .footer-bottom {
     row-gap: 20px; } }
+
+@media only screen and (max-width: 576px) {
+  .slider-btn {
+    width: 100%;
+    justify-content: center; } }
 
 .header {
   z-index: 999;
