@@ -42,7 +42,8 @@
                                 <li class="about-link" data-target="experience-content"><span>Experience</span></li>
                             </ul>
                         </div>
-                        <div class="about-link-content d-flex justify-content-center justify-content-lg-start position-relative">
+                        <div
+                            class="about-link-content d-flex justify-content-center justify-content-lg-start position-relative">
                             <div class="content skill-content w-100 active">
                                 <div class="skill-1">
                                     <div class="progress-bar-skill" data-percentage="80%">
@@ -389,5 +390,5 @@
             </div>
         </div>
     </div>
-</section> 
+</section>
 <?php include('inc/footer.php'); ?>
