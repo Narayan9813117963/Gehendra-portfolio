@@ -19,6 +19,7 @@
     transition: 0.3s opacity ease-in;
     &.hidden{
         opacity: 0;
+        pointer-events: none;
     }
 }
 

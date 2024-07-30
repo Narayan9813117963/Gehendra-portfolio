@@ -42,7 +42,7 @@
                                 <li class="about-link" data-target="experience-content"><span>Experience</span></li>
                             </ul>
                         </div>
-                        <div class="about-link-content d-flex justify-content-center justify-content-lg-start">
+                        <div class="about-link-content d-flex justify-content-center justify-content-lg-start position-relative">
                             <div class="content skill-content w-100 active">
                                 <div class="skill-1">
                                     <div class="progress-bar-skill" data-percentage="80%">
@@ -96,7 +96,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content education-content">
+                            <div class="content education-content position-absolute">
                                 <ul class="p-0 m-0 d-flex flex-column">
                                     <li><strong>High School(+2)</strong> at Milestone HSS, Balkumari in 2015</li>
                                     <li><strong>Bachelor in Science(Bsc)</strong> at Trichandra Multiple Campus,
@@ -105,7 +105,7 @@
                                         Management, Kamalpokhari in 2024</li>
                                 </ul>
                             </div>
-                            <div class="content experience-content">
+                            <div class="content experience-content position-absolute">
                                 <ul class="p-0 m-0 d-flex flex-column">
                                     <li><strong>Enumerator</strong> at Central Beureau of Statistics, Thapathali from
                                         2017 - 2018</li>
@@ -209,7 +209,7 @@
                 <div
                     class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
                     <figure class="service-thumb">
-                        <img src="images/coffee-shop-1.png" alt="project-thumb">
+                        <img src="images/coffee.png" alt="project-thumb">
                     </figure>
                     <div class="card-overlay position-absolute"></div>
                     <div class="card-btn position-absolute">
@@ -222,20 +222,20 @@
                 <div
                     class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
                     <figure class="service-thumb">
-                        <img src="images/coffee-shop-1.png" alt="project-thumb">
+                        <img src="images/themes.png" alt="project-thumb">
                     </figure>
                     <div class="card-overlay position-absolute"></div>
                     <div class="card-btn position-absolute">
                         <a href="https://basnyatbrew.onrender.com/" class="primary-btn">Demo</a>
                     </div>
                 </div>
-                <h3 class="text-center">Basnyat Brew Coffee Shop</h3>
+                <h3 class="text-center">Themesarray</h3>
             </div>
             <div class="col-12 col-sm-6 col-lg-4">
                 <div
                     class="portfolio-card d-flex flex-column align-items-center justify-content-center position-relative">
                     <figure class="service-thumb">
-                        <img src="images/coffee-shop-1.png" alt="project-thumb">
+                        <img src="images/coffee.png" alt="project-thumb">
                     </figure>
                     <div class="card-overlay position-absolute"></div>
                     <div class="card-btn position-absolute">
@@ -389,5 +389,5 @@
             </div>
         </div>
     </div>
-</section>
+</section> 
 <?php include('inc/footer.php'); ?>

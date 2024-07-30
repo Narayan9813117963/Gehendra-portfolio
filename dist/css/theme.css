@@ -16,7 +16,8 @@
   opacity: 1;
   transition: 0.3s opacity ease-in; }
   .loader.hidden {
-    opacity: 0; }
+    opacity: 0;
+    pointer-events: none; }
 
 .ripple {
   width: 75px;
@@ -243,7 +244,10 @@ img {
     .about .about-content-wrapper .about-content .about-link-content {
       margin-top: 13px; }
       .about .about-content-wrapper .about-content .about-link-content .content {
-        display: none; }
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+        transition: 0.5s all ease; }
       .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 {
         max-width: 480px; }
         .about .about-content-wrapper .about-content .about-link-content .skill-content .skill-1 .progress-bar-skill p {
@@ -298,7 +302,9 @@ img {
           font-family: "poppins-regular";
           font-size: 15px; }
       .about .about-content-wrapper .about-content .about-link-content .active {
-        display: block; }
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0); }
   .about .about-content-wrapper .cv-btn {
     margin-top: 24px; }
 
@@ -428,7 +434,7 @@ img {
   font-family: "poppins-regular";
   border-radius: 5px;
   transition: 0.3s all ease;
-  border: 1px solid transparent; }
+  border: 1px solid #f4f4f4; }
   .contact form input::placeholder,
   .contact form textarea::placeholder {
     font-size: 14px;
@@ -436,7 +442,7 @@ img {
   .contact form input:focus,
   .contact form textarea:focus {
     outline: none;
-    border: 1px solid #dedede; }
+    border: 1px solid #c3c3c3; }
 
 .contact form textarea {
   height: 176px;
